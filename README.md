@@ -1,4 +1,4 @@
-frontend-nanodegree-arcade-game
+frontend-nanodegree-feedreader
 ===============================
 1). Clone the following Github repository from the link: https://github.com/dipikachadha/frontend-nanodegree-feedreader
 2). Open index.html in the browser.
