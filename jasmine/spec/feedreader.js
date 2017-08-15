@@ -34,8 +34,8 @@ $(function() {
          */
          it('should be defined in the loop and not empty', function() {
            allFeeds.forEach(function(feed) {
-             expect(feed.url).toBeDefined();
-             expect(feed.url).not.toBe(0);
+             expect(feed.url.length).toBeDefined();
+             expect(feed.url.length).not.toBe(0);
            });
          });
 
@@ -45,8 +45,8 @@ $(function() {
          */
          it('should be defined in the loop and not empty', function() {
            allFeeds.forEach(function(feed) {
-             expect(feed.name).toBeDefined();
-             expect(feed.name).not.toBe(0);
+             expect(feed.name.length).toBeDefined();
+             expect(feed.name.length).not.toBe(0);
           });
         });
     });
@@ -64,6 +64,7 @@ $(function() {
          * hiding/showing of the menu element.
          */
          it('changes visibility on click', function () {
+           // verify that after clicking the menu icon once, the menu displays
             $(".menu-icon-link").click();
             expect($('body').hasClass("menu-hidden")).toBe(false);
 
